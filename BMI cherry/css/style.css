@@ -1,0 +1,485 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.wrap {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 300px;
+    background-color: #424242;
+    color: #ffd366;
+    position: relative;
+}
+
+.header img {
+    position: absolute;
+    left: 173px;
+    top: 92px;
+}
+
+.form {
+    float: left;
+    width: 300px;
+    margin-left: 387px;
+    margin-top: 74px;
+}
+
+.form label {
+    font-size: 18px;
+    display: inline-block;
+    float: left;
+    padding-bottom: 7px;
+}
+
+.form [type=number] {
+    width: 230px;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid #ffd366;
+    background: rgba(255, 255, 255, 0.18);
+    font-size: 24px;
+    font-family: SFNSDisplay;
+    color: #fff;
+    padding-left: 16px;
+    float: left;
+    margin-bottom: 20px;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.50);
+}
+
+.btnSave {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: none;
+    background: #ffd366;
+    font-size: 24px;
+    color: #424242;
+    position: absolute;
+    top: 100px;
+    left: 690px;
+}
+
+.bmitext {
+    font-size: 14px;
+}
+
+.btnSave:hover {
+    box-shadow: 0 1px 6px 3px rgba(255, 196, 50, 0.64);
+}
+
+.btnSave:active {
+    background: #dea821;
+}
+
+.btnGreen {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 6px solid #86D73E;
+    background: none;
+    font-size: 24px;
+    color: #86D73F;
+    position: absolute;
+    top: 100px;
+    left: 690px;
+}
+
+.btnGreen p {
+    font-size: 32px;
+}
+
+.btnGreen em {
+    font-size: 14px;
+}
+
+.btnGreen .boxicon {
+    position: absolute;
+    right: -10px;
+    bottom: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid #424242;
+    background-image: url('../img/icons_loop.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #86d73f;
+}
+
+.status {
+    position: absolute;
+    top: 140px;
+    left: 820px;
+    font-size: 32px;
+    color: #86D73E;
+}
+
+.btnBlue {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 6px solid #31BAF9;
+    background: none;
+    font-size: 24px;
+    color: #31BAF9;
+    position: absolute;
+    top: 100px;
+    left: 690px;
+}
+
+.btnBlue p {
+    font-size: 32px;
+}
+
+.btnBlue em {
+    font-size: 14px;
+}
+
+.btnBlue .boxicon {
+    background: #31BAF9;
+    position: absolute;
+    right: -10px;
+    bottom: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid #424242;
+    background-image: url('/BMI/img/icons_loop.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btnOrange1,
+.btnOrange2,
+.btnOrange3,
+.btnRed {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 6px solid #FF982D;
+    background: none;
+    font-size: 24px;
+    color: #FF982D;
+    position: absolute;
+    top: 100px;
+    left: 690px;
+}
+
+.btnOrange1 p,
+.btnOrange2 p,
+.btnOrange3 p,
+.btnRed p {
+    font-size: 32px;
+}
+
+.btnOrange1 em,
+.btnOrange2 em,
+.btnOrange3 em,
+.btnRed em {
+    font-size: 14px;
+}
+
+.btnOrange1 .boxicon {
+    background: #FF982D;
+    position: absolute;
+    right: -10px;
+    bottom: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid #424242;
+    background-image: url('/BMI/img/icons_loop.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btnOrange2,
+.btnOrange3 {
+    border: 6px solid #FF6C02;
+    color: #FF6C02;
+}
+
+.btnOrange2 .boxicon,
+.btnOrange3 .boxicon {
+    background: #FF6C02;
+    position: absolute;
+    right: -10px;
+    bottom: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid #424242;
+    background-image: url('/BMI/img/icons_loop.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btnRed {
+    border: 6px solid #FF1200;
+    color: #FF1200;
+}
+
+.btnRed .boxicon {
+    background: #FF1200;
+    position: absolute;
+    right: -10px;
+    bottom: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid #424242;
+    background-image: url('/BMI/img/icons_loop.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.content h2 {
+    font-size: 24px;
+    color: #424242;
+    text-align: center;
+    padding: 50px 0 36px 0;
+}
+
+.content .spacearea {
+    background-color: #f5f5f5;
+    padding-top: 20px;
+}
+
+.footer {
+    height: 90px;
+    background-color: #FFD366;
+    position: relative;
+}
+
+.footer img {
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    top: 18px;
+    left: 485px;
+}
+
+.content {
+    background-color: #f5f5f5;
+}
+
+.contentList {
+    margin: auto;
+    width: 700px;
+    line-height: 62px;
+}
+
+.contentList p {
+    color: #4A4A4A;
+    height: 62px;
+    margin-top: 10px;
+    background: #fff;
+    font-size: 12px;
+}
+
+.contentList span {
+    padding-left: 7px;
+    padding-right: 40px;
+    font-size: 20px;
+    display: inline-block;
+    width: 64px;
+}
+
+.contentList b {
+    font-size: 20px;
+    padding: 0 30px 0 19px;
+    display: inline-block;
+    width: 80px;
+}
+
+
+/* 過輕     */
+
+.blue {
+    border-left: 7px solid #31BAF9;
+    box-shadow: 2px 0 3px 0 rgba(49, 186, 249, 0.29);
+}
+
+
+/* 理想 */
+
+.green {
+    border-left: 7px solid #86D73F;
+    box-shadow: 2px 0 3px 0 rgba(133, 215, 63, 0.29);
+}
+
+
+/* 過重 */
+
+.orange1 {
+    border-left: 7px solid #FF982D;
+    box-shadow: 2px 0 3px 0 rgba(255, 152, 45, 0.29);
+}
+
+
+/* 輕度肥胖 */
+
+.orange2 {
+    border-left: 7px solid #FF6C02;
+    box-shadow: 2px 0 3px 0 rgba(255, 108, 2, 0.29);
+}
+
+
+/* 中度肥胖 */
+
+.orange3 {
+    border-left: 7px solid #FF6C02;
+    box-shadow: 2px 0 3px 0 rgba(255, 108, 2, 0.29);
+}
+
+
+/* 重度肥胖 */
+
+.red {
+    border-left: 7px solid #FF1200;
+    box-shadow: 2px 0 3px 0 rgba(255, 17, 0, 0.29);
+}
